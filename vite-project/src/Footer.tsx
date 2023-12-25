@@ -1,6 +1,7 @@
 import React from 'react'
 
 import footerLogo from './assets/footerLogo.svg'
+import appearence from './Footer.module.css'
 
 interface footFunction{
     chapterName: string,
@@ -13,10 +14,16 @@ interface footFunctions{
 
 const Footer: React.FC<footFunctions> = ({footFunctions}) =>{
     return(
-        <div className='Footer'>
-            <img src={footerLogo} alt="Health Care"/>
-            <h6>HealthCare provides progressive, and affordable healthcare, accessible on mobile and online for everyone</h6>
-            <h6>©HealthCare PTY LTD 2023. All rights reserved</h6>
+        <div className={appearence.row}>
+            <div className={appearence.column}>
+                <img src={footerLogo} alt="Health Care"/>
+                <div className={appearence.text_description}>
+                HealthCare provides progressive, and affordable healthcare, accessible on mobile and online for everyone
+                </div>
+                <div className={appearence.text_rights}>
+                    ©HealthCare PTY LTD 2023. All rights reserved
+                </div>
+            </div>
             {
                 footFunctions.map((item, index) => 
                     <div className='Chapter'>

@@ -1,4 +1,9 @@
 :root {
+  --secondary-background-color: rgba(103, 195, 243, 1);
+  --button-color: rgba(63, 143, 246, 1);
+  --on-primary-button-color: rgba(255, 255, 255, 1);
+
+
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;

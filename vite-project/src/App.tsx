@@ -1,6 +1,3 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import companyLogo from './assets/firmLogo.svg'
 import headIllustration from './assets/header Illustration.svg'
 import search from './assets/Search.svg'
@@ -15,13 +12,14 @@ import customer from './assets/customer.svg'
 import article1 from './assets/article1.svg'
 import article2 from './assets/article2.svg'
 import article3 from './assets/article3.svg'
-import './App.css'
+import './App.module.css'
 import ServiceCard from './ServiceCard'
 import ArticleCard from './ArticleCard'
 import Footer from './Footer'
+import appearence from './App.module.css'
+import GreetingText from './GreetingText'
 
 function App() {
-  const [count, setCount] = useState(0)
 
   const services=[
     {
@@ -93,23 +91,23 @@ function App() {
   return (
     <>
       <header>
-        <div>
-          <nav className='page menu'>
+        <div className={appearence.headerRow}>
+        <img src={companyLogo} alt="Hearth care"/>
+          <div className={appearence.topNav}>
             <ul>
-              <img src={companyLogo} alt="Hearth care"/>
+              
               <a href="">Home</a>
               <a href=''>Find a doctor</a>
               <a href=''>Apps</a>
               <a href=''>Testimonials</a>
               <a href=''>About us</a>
+              
             </ul> 
             
-          </nav>
+          </div>
         </div>
-        <div className='Greeting text'>
-            <h1>Virtual healthcare for you</h1>
-            <h2>Our service provides progressive, and affordable healthcare, accessible on mobile and online for everyone</h2>
-            <button className='Primary button'>Consult today</button>
+        <div className={appearence.headerRow}>
+            <GreetingText />
             <div className='Greeting image'>
                 <img src={headIllustration} alt="Virtual healthcare for you"/>
             </div>
