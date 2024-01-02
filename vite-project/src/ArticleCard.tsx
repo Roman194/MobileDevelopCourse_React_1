@@ -1,4 +1,6 @@
 import React from 'react'
+import Appearence from './ArticleCard.module.css'
+import PrimaryOnlyBorderButton from './PrimaryOnlyBorderButton';
 
 interface article{
     title: string,
@@ -12,16 +14,18 @@ interface Articles{
 
 const ArticleCard: React.FC<Articles> = ({arrt}) =>{
     return(
-        <div>
+        <div className={Appearence.row}>
+            <img className={Appearence.dotsLeft} src='Dots'/>
             {arrt.map((item, index) => 
-            <div className='ArticleCard'>
-                <img src={arrt[index].image} alt="Article image"/>
-                <h1>{arrt[index].title}</h1>
-                <h2>{arrt[index].subtitle}</h2>
-                <button>Read more ➜</button>
+            <div className={Appearence.article}>
+                <img className={Appearence.img} src={arrt[index].image} alt="Article image"/>
+                <h1 className={Appearence.h1}>{arrt[index].title}</h1>
+                <h2 className={Appearence.h2}>{arrt[index].subtitle}</h2>
+                <button className={Appearence.moreBut}>Read more ➜</button>
             </div>
                 )
             }
+            <PrimaryOnlyBorderButton text={"View all"}/>
         </div>
     );
 };

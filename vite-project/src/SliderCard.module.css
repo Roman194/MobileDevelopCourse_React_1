@@ -17,3 +17,36 @@
     padding-left: 10%;
     position: relative;
 }
+
+.card{
+    background-color: var(--button-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 24px;
+    padding: 3% 6%;
+    width: 100%;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 20%;
+    position: relative;
+    height: 20%;
+}
+
+.arrBut{
+    background-color: transparent;
+    color: var(--button-color);
+    width: 10%;
+    height: 10%;
+    border: 0 solid transparent;
+    font-size: 25px;
+}
+
+.dot{
+    background-color: var(--dot-color);
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    margin-right: 0.5%;
+}
