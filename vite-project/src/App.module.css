@@ -32,3 +32,13 @@ a{
   flex-direction: column;
   justify-content: start;
 }
+
+.artColumn {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-right: 10%;
+  padding-left: 10%;
+  position: relative;
+}

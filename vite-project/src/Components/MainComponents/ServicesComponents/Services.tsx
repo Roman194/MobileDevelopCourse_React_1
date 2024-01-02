@@ -1,8 +1,8 @@
 import React from 'react'
 import ServiceCard from './ServiceCard'
 import appearence from './Services.module.css'
-import Divider from './Divider'
-import BorderButton from './PrimaryOnlyBorderButton'
+import Divider from '../../ViewComponents/Divider'
+import BorderButton from '../../ViewComponents/PrimaryOnlyBorderButton'
 
 
 interface card{

@@ -1,5 +1,4 @@
 import React from 'react'
-
 import footerLogo from './assets/footerLogo.svg'
 import appearence from './Footer.module.css'
 

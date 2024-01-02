@@ -1,6 +1,5 @@
 import React from 'react'
 import Appearence from './ArticleCard.module.css'
-import PrimaryOnlyBorderButton from './PrimaryOnlyBorderButton';
 
 interface article{
     title: string,
@@ -25,7 +24,6 @@ const ArticleCard: React.FC<Articles> = ({arrt}) =>{
             </div>
                 )
             }
-            <PrimaryOnlyBorderButton text={"View all"}/>
         </div>
     );
 };

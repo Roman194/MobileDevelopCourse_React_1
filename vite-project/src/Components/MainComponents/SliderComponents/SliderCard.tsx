@@ -1,7 +1,7 @@
 import React from 'react'
 import Appearence from './SliderCard.module.css'
 import customer from './assets/customer.svg'
-import WhiteDivider from './WhiteDivider'
+import WhiteDivider from '../../ViewComponents/WhiteDivider'
 
 const SliderCard: React.FC = () =>{
     return(

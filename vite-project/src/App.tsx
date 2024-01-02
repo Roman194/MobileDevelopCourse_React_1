@@ -6,20 +6,20 @@ import phone from './assets/Phone.svg'
 import list from './assets/List.svg'
 import help from './assets/Help.svg'
 import report from './assets/Report.svg'
-import customer from './assets/customer.svg'
 import article1 from './assets/article1.svg'
 import article2 from './assets/article2.svg'
 import article3 from './assets/article3.svg'
 import './App.module.css'
-import Services from './Services'
-import ArticleCard from './ArticleCard'
-import Footer from './Footer'
+import Services from './Components/MainComponents/ServicesComponents/Services'
+import ArticleCard from './Components/MainComponents/ArticleComponents/ArticleCard'
+import Footer from './Components/MainComponents/FooterComponents/Footer'
 import appearence from './App.module.css'
-import GreetingText from './GreetingText'
-import HealthCareProvider from './HealthCareProvider'
-import MobileApps from './MobileApps'
-import SliderCard from './SliderCard'
-import Divider from './Divider'
+import GreetingText from './Components/MainComponents/GreetingComponents/GreetingText'
+import HealthCareProvider from './Components/MainComponents/HealthCarewProviderComponents/HealthCareProvider'
+import MobileApps from './Components/MainComponents/MobileAppsComponents/MobileApps'
+import SliderCard from './Components/MainComponents/SliderComponents/SliderCard'
+import Divider from './Components/ViewComponents/Divider'
+import PrimaryOnlyBorderButton from './Components/ViewComponents/PrimaryOnlyBorderButton'
 
 function App() {
 
@@ -130,14 +130,15 @@ function App() {
         </div>
 
         <div className='Slider'>
-            <SliderCard />
+            <SliderCard/>
 
         </div>
 
-        <div className={appearence.column}>
+        <div className={appearence.artColumn}>
             <h1>Check out our latest article</h1>
             <Divider />
             <ArticleCard arrt={articles}/>
+            <PrimaryOnlyBorderButton text={"View all"}/>
         </div>
 
       </div>

@@ -1,6 +1,6 @@
 import React from 'react'
 import providerIllustration from './assets/healthCareProviderIllustration.svg'
-import BorderButton from './PrimaryOnlyBorderButton'
+import BorderButton from '../../ViewComponents/PrimaryOnlyBorderButton'
 import appearence from './HealthCareProvider.module.css'
 
 const HealthCareProvider: React.FC = () =>{

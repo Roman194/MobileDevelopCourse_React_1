@@ -1,6 +1,6 @@
 import React from 'react'
 import appearence from './GreetingText.module.css'
-import PrimaryButton from './PrimaryButton';
+import PrimaryButton from '../../ViewComponents/PrimaryButton';
 
 
 const GreetingText: React.FC = () =>{

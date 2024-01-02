@@ -1,7 +1,7 @@
 import React from 'react'
 import appearence from './MobileApps.module.css'
 import appIllustration from './assets/mobileAppIllustration.svg'
-import BorderButton from './PrimaryOnlyBorderButton'
+import BorderButton from '../../ViewComponents/PrimaryOnlyBorderButton'
 
 const MobileApps: React.FC = () =>{
     return(
