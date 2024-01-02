@@ -26,3 +26,9 @@ a{
   padding: 0.6em 1.2em;
   margin-left: 40px;
 }
+
+.column{
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+}

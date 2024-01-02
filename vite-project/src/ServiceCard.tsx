@@ -1,4 +1,5 @@
 import React from 'react'
+import appearence from './ServiceCard.module.css'
 
 interface card{
     title: string,
@@ -13,14 +14,14 @@ interface cards{
 const ServiceCard: React.FC<cards> = ({cards}) =>{
     return(
         
-        <div className='Card'>
+        <div className={appearence.card}>
             {
             cards.map((item, index) =>
 
-            <div>
+            <div className={appearence.subCard}>
                 <img src={cards[index].serviceLogo} alt={cards[index].title}/>
-                <h1>{cards[index].title}</h1>
-                <h2>{cards[index].subtitle}</h2>
+                <h1 className={appearence.h1}>{cards[index].title}</h1>
+                <h2 className={appearence.h2}>{cards[index].subtitle}</h2>
             </div>
 
             )

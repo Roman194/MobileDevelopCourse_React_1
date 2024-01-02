@@ -6,18 +6,18 @@ import phone from './assets/Phone.svg'
 import list from './assets/List.svg'
 import help from './assets/Help.svg'
 import report from './assets/Report.svg'
-import providerIllustration from './assets/healthCareProviderIllustration.svg'
-import appIllustration from './assets/mobileAppIllustration.svg'
 import customer from './assets/customer.svg'
 import article1 from './assets/article1.svg'
 import article2 from './assets/article2.svg'
 import article3 from './assets/article3.svg'
 import './App.module.css'
-import ServiceCard from './ServiceCard'
+import Services from './Services'
 import ArticleCard from './ArticleCard'
 import Footer from './Footer'
 import appearence from './App.module.css'
 import GreetingText from './GreetingText'
+import HealthCareProvider from './HealthCareProvider'
+import MobileApps from './MobileApps'
 
 function App() {
 
@@ -93,7 +93,7 @@ function App() {
       <header>
         <div className={appearence.headerRow}>
         <img src={companyLogo} alt="Hearth care"/>
-          <div className={appearence.topNav}>
+          <div className={appearence.column}>
             <ul>
               
               <a href="">Home</a>
@@ -114,29 +114,17 @@ function App() {
         </div>
       </header>
       <body>
+        
+        <div className={appearence.column}>
 
-        <div className = 'Services'>
-          <h1>Our services</h1>
-          <h2>We provide to you the best choiches for you. Adjust it to your health needs and make sure your undergo treatment with our highly qualified doctors you can consult with us which type of service is suitable for your health</h2>
-          <ServiceCard cards={services}/>
-          <button className='BorderButton'>Learn more</button>
-        </div>
-
+        <Services cards={services}/>
+        
         <div className='HealthCare Provider'>
-          <img src={providerIllustration} alt='Leading healthcare providers'/>
-          <h1>Leading healthcare providers</h1>
-          <h2>We provides progressive, and affordable healthcare, accessible on mobile and online for everyone. To us, it's not just work. We take pride in the solutions we deliver</h2>
-          
-          <button className='BorderButton'>Learn more</button> {/* reuse!  */}
+          <HealthCareProvider />
         </div>
 
         <div className='Mobile app'>
-          <h1>Download our mobile apps</h1>
-          <h2>Our dedicated patient engagement app and web portal allow you to access information instantaneously (no tedeous form, long calls, or administrative hassle) and securely</h2>
-          
-          <button className='BorderButton'>Download  🠗</button>
-
-          <img src={appIllustration} alt='Download our mobile apps'/>
+          <MobileApps />
         </div>
 
         <div className='Slider'>
@@ -155,7 +143,7 @@ function App() {
             <ArticleCard arrt={articles}/>
         </div>
 
-
+      </div>
       </body>
       <footer>
         <Footer footFunctions={footFunctions}/>

@@ -1,0 +1,19 @@
+.row {
+    display: flex;
+    flex-direction: row;
+    padding: 6% 0%;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    height: 20%;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-right: 10%;
+    padding-left: 10%;
+    position: relative;
+}
