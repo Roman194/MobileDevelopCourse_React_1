@@ -1,9 +1,9 @@
 import React from 'react'
-import appearence from './WhiteDivider.module.css'
+import appearance from './WhiteDivider.module.css'
 
 const Divider:React.FC = () =>{
     return(
-        <div className={appearence.wDiv}></div>
+        <div className={appearance.wDiv}></div>
     );
 };
 
