@@ -13,17 +13,16 @@ import './App.module.css'
 import Services from './Components/MainComponents/ServicesComponents/Services'
 import ArticleCard from './Components/MainComponents/ArticleComponents/ArticleCard'
 import Footer from './Components/MainComponents/FooterComponents/Footer'
-import appearence from './App.module.css'
+import appearance from './App.module.css'
 import GreetingText from './Components/MainComponents/GreetingComponents/GreetingText'
-import HealthCareProvider from './Components/MainComponents/HealthCarewProviderComponents/HealthCareProvider'
+import HealthCareProvider from './Components/MainComponents/HealthCareProviderComponents/HealthCareProvider'
 import MobileApps from './Components/MainComponents/MobileAppsComponents/MobileApps'
 import SliderCard from './Components/MainComponents/SliderComponents/SliderCard'
 import Divider from './Components/ViewComponents/Divider'
 import PrimaryOnlyBorderButton from './Components/ViewComponents/PrimaryOnlyBorderButton'
 
 function App() {
-
-  const services=[
+  const services = [
     {
       title: 'Search doctor',
       subtitle: 'Choose your doctor from thousands of specialist, general, and trusted hospitals',
@@ -53,11 +52,10 @@ function App() {
       title: 'Tracking',
       subtitle: 'Track and save your medical history and health data',
       serviceLogo: report
-    }
-
+    },
   ]
 
-  const articles=[
+  const articles = [
     {
       title: 'Disease detection, check up in the laboratory',
       subtitle: 'In this case, the role of the health laboratory is very important to do a disease detection...',
@@ -75,7 +73,7 @@ function App() {
     },
   ]
 
-  const footFunctions=[
+  const footFunctions = [
     {
       chapterName: 'Company',
       elements: ['About', 'Testimontials', 'Find a doctor', 'Apps']
@@ -87,65 +85,46 @@ function App() {
     {
       chapterName: 'Help',
       elements: ['Help center', 'Contact support', 'Instructions', 'How it works']
-    }
+    },
   ]
 
   return (
     <>
       <header>
-        <div className={appearence.headerRow}>
-        <img src={companyLogo} alt="Hearth care"/>
-          <div className={appearence.column}>
+        <div className={appearance.headerRow}>
+          <img src={companyLogo} alt="Hearth care"/>
+          <div className={appearance.column}>
             <ul>
-              
-              <a href="">Home</a>
-              <a href=''>Find a doctor</a>
-              <a href=''>Apps</a>
-              <a href=''>Testimonials</a>
-              <a href=''>About us</a>
-              
+              <a href="#">Home</a>
+              <a href="#">Find a doctor</a>
+              <a href="#">Apps</a>
+              <a href="#">Testimonials</a>
+              <a href="#">About us</a>
             </ul> 
-            
           </div>
         </div>
-        <div className={appearence.headerRow}>
-            <GreetingText />
-            <div className='Greeting image'>
-                <img src={headIllustration} alt="Virtual healthcare for you"/>
-            </div>
+        <div className={appearance.headerRow}>
+          <GreetingText />
+          <div className="Greeting image">
+            <img src={headIllustration} alt="Virtual healthcare for you"/>
+          </div>
         </div>
       </header>
-      <body>
-        
-        <div className={appearence.column}>
-
+      <main className={appearance.column}>
         <Services cards={services}/>
         
-        <div className='HealthCare Provider'>
-          <HealthCareProvider />
+        <HealthCareProvider />
+        <MobileApps />
+        <SliderCard />
+
+        <div className={appearance.artColumn}>
+          <h1>Check out our latest article</h1>
+          <Divider />
+          <ArticleCard arrt={articles}/>
+          <PrimaryOnlyBorderButton text={"View all"}/>
         </div>
-
-        <div className='Mobile app'>
-          <MobileApps />
-        </div>
-
-        <div className='Slider'>
-            <SliderCard/>
-
-        </div>
-
-        <div className={appearence.artColumn}>
-            <h1>Check out our latest article</h1>
-            <Divider />
-            <ArticleCard arrt={articles}/>
-            <PrimaryOnlyBorderButton text={"View all"}/>
-        </div>
-
-      </div>
-      </body>
-      <footer>
-        <Footer footFunctions={footFunctions}/>
-      </footer>
+      </main>
+      <Footer footFunctions={footFunctions}/>
     </>
   )
 }
