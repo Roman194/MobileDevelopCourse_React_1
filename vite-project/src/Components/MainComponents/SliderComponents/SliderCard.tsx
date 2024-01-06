@@ -1,19 +1,19 @@
 import React from 'react'
-import Appearence from './SliderCard.module.css'
+import appearance from './SliderCard.module.css'
 import customer from './assets/customer.svg'
 import WhiteDivider from '../../ViewComponents/WhiteDivider'
 
 const SliderCard: React.FC = () =>{
     return(
-        <div className={Appearence.column}>
-            <div className={Appearence.card}>
+        <div className={appearance.column}>
+            <div className={appearance.card}>
             <h1>What our customer are saying</h1>
             <WhiteDivider />
 
-            <div className={Appearence.row}>
+            <div className={appearance.row}>
 
                 <img src={customer} alt='Customer logo'/>
-                <div className={Appearence.column}>
+                <div className={appearance.column}>
                     <h2>Edward Newgate</h2>
                     <h3>Founder Circle</h3>
                 </div>
@@ -21,30 +21,30 @@ const SliderCard: React.FC = () =>{
             </div>
             </div>
 
-            <div className={Appearence.row}>
-                <button style= {{color: "rgba(91, 155, 243, 0.3)"}} className={Appearence.arrBut}>➜</button>
+            <div className={appearance.row}>
+                <button style= {{color: "rgba(91, 155, 243, 0.3)"}} className={appearance.arrBut}>➜</button>
                 
                     <div
-                        className={Appearence.dot} 
+                        className={appearance.dot} 
                         style= {{backgroundColor: "rgba(91, 155, 243, 1)"}}>
                     </div>
 
                     <div
-                        className={Appearence.dot} 
+                        className={appearance.dot} 
                         style= {{backgroundColor: "rgba(91, 155, 243, 0.3)"}}>
                     </div>
 
                     <div
-                        className={Appearence.dot} 
+                        className={appearance.dot} 
                         style= {{backgroundColor: "rgba(91, 155, 243, 0.3)"}}>
                     </div>
 
                     <div
-                        className={Appearence.dot} 
+                        className={appearance.dot} 
                         style= {{backgroundColor: "rgba(91, 155, 243, 0.3)"}}>
                     </div>
                 
-                <button style= {{color: "rgba(91, 155, 243, 1)"}} className={Appearence.arrBut}>➜</button>
+                <button style= {{color: "rgba(91, 155, 243, 1)"}} className={appearance.arrBut}>➜</button>
             </div>
         </div>
     );

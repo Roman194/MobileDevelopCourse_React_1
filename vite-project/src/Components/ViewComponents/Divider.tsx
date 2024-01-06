@@ -1,9 +1,9 @@
 import React from 'react'
-import appearence from './Divider.module.css'
+import appearance from './Divider.module.css'
 
 const Divider:React.FC = () =>{
     return(
-        <div className={appearence.div}></div>
+        <div className={appearance.div}></div>
     );
 };
 
