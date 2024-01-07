@@ -19,7 +19,7 @@ const Services:React.FC<cards> = ({cards}) =>{
     return(
         <div className={appearance.main}>
           <h1 className={appearance.h1}>Our services</h1>
-          <h2 className={appearance.h2}>We provide to you the best choiches for you. Adjust it to your health needs and make sure your undergo treatment with our highly qualified doctors you can consult with us which type of service is suitable for your health</h2>
+          We provide to you the best choiches for you. Adjust it to your health needs and make sure your undergo treatment with our highly qualified doctors you can consult with us which type of service is suitable for your health
           <Divider />
           <div className={appearance.cards}>
             <ServiceCard cards={cards}/>

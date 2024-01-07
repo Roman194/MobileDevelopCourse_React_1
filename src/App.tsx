@@ -9,16 +9,17 @@ import report from './assets/Report.svg'
 import article1 from './assets/article1.svg'
 import article2 from './assets/article2.svg'
 import article3 from './assets/article3.svg'
+import dots from './assets/dots.svg'
 import './App.module.css'
 import Services from './Components/MainComponents/ServicesComponents/Services'
 import ArticleCard from './Components/MainComponents/ArticleComponents/ArticleCard'
 import Footer from './Components/MainComponents/FooterComponents/Footer'
 import appearance from './App.module.css'
-import GreetingText from './Components/MainComponents/GreetingComponents/GreetingText'
 import HealthCareProvider from './Components/MainComponents/HealthCareProviderComponents/HealthCareProvider'
 import MobileApps from './Components/MainComponents/MobileAppsComponents/MobileApps'
 import SliderCard from './Components/MainComponents/SliderComponents/SliderCard'
 import Divider from './Components/ViewComponents/Divider'
+import Button from './Components/ViewComponents/Button'
 import PrimaryOnlyBorderButton from './Components/ViewComponents/PrimaryOnlyBorderButton'
 
 function App() {
@@ -90,26 +91,32 @@ function App() {
 
   return (
     <>
-      <header>
-        <div className={appearance.headerRow}>
-          <img src={companyLogo} alt="Hearth care"/>
-          <div className={appearance.column}>
+      <div className={appearance.topContainer}>
+        <header className={appearance.menu}>
+          <img src={companyLogo} alt="Health care" width="183" />
+          <nav className={appearance.column}>
             <ul>
-              <a href="#">Home</a>
-              <a href="#">Find a doctor</a>
-              <a href="#">Apps</a>
-              <a href="#">Testimonials</a>
-              <a href="#">About us</a>
+              <li><a href="#" className={appearance.currentSection}>Home</a></li>
+              <li><a href="#">Find a doctor</a></li>
+              <li><a href="#">Apps</a></li>
+              <li><a href="#">Testimonials</a></li>
+              <li><a href="#">About us</a></li>
             </ul> 
+          </nav>
+        </header>
+        <div className={appearance.hero}>
+          <div className={appearance.heroContent}>
+            <img src={dots} className={appearance.dots} />
+            <div className={appearance.greetingTextContainer}>
+                <h1>Virtual healthcare for you</h1>
+                <span class={appearance.greetingText}>Our service provides progressive, and affordable healthcare, accessible on mobile and online for everyone</span>
+            </div>
+            <Button primary>Consult today</Button>
           </div>
+
+          <img src={headIllustration} alt="Virtual healthcare for you" className={appearance.greetingImage} />
         </div>
-        <div className={appearance.headerRow}>
-          <GreetingText />
-          <div className="Greeting image">
-            <img src={headIllustration} alt="Virtual healthcare for you"/>
-          </div>
-        </div>
-      </header>
+      </div>
       <main className={appearance.column}>
         <Services cards={services}/>
         
