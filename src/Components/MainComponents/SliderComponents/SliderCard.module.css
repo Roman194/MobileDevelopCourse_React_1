@@ -1,11 +1,24 @@
-.row {
+.controls {
     display: flex;
     flex-direction: row;
-    padding: 6% 0%;
-    width: 100%;
     align-items: center;
     justify-content: center;
-    height: 20%;
+    gap: 18px;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    flex-wrap: wrap;
+    gap: 30px 60px;
+}
+
+@media screen and (max-width: 1347px) {
+    .row {
+        justify-content: center;
+    }
 }
 
 .column {
@@ -13,40 +26,59 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding-right: 10%;
-    padding-left: 10%;
     position: relative;
 }
 
-.card{
-    background-color: var(--button-color);
+.card {
+    background: linear-gradient(208deg, #67C3F3 9.05%, #5A98F2 76.74%);
+    color: white;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     border-radius: 24px;
-    padding: 3% 6%;
-    width: 100%;
-    margin-left: 10%;
-    margin-right: 10%;
-    margin-top: 20%;
+    width: calc(100vw - 100px);
+    max-width: 1120px;
     position: relative;
-    height: 20%;
+    padding: 70px 120px;
+    box-sizing: border-box;
+    gap: 60px;
 }
 
-.arrBut{
+.card * {
+    color: white;
+}
+
+.customerInfo {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+.customerText {
+    display: flex;
+    flex-direction: column;
+}
+
+.customerName {
+    font-weight: 700;
+    font-size: 22px;
+}
+
+.reviewContent {
+    max-width: 420px;
+}
+
+.arrBut {
     background-color: transparent;
     color: var(--button-color);
-    width: 10%;
-    height: 10%;
     border: 0 solid transparent;
     font-size: 25px;
 }
 
-.dot{
+.dot {
     background-color: var(--dot-color);
     width: 12px;
     height: 12px;
-    border-radius: 50%;
-    margin-right: 0.5%;
+    border-radius: 100px;
 }

@@ -8,7 +8,7 @@ import { titles } from '../../../common.module.css'
 
 const MobileApps: React.FC = () => {
   return (
-    <div className={appearance.row}>
+    <div className={appearance.rowReverse}>
       <div className={appearance.column}>
         <div className={titles}>
           <h1>Download our mobile apps</h1>

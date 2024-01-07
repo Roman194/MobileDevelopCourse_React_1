@@ -7,12 +7,16 @@
     width: 486px;
 }
 
-.row {
+.row, .rowReverse {
     display: flex;
     flex-direction: row;
     justify-content: center;
     gap: 0 137px;
     flex-wrap: wrap;
+}
+
+.rowReverse {
+    flex-wrap: wrap-reverse;
 }
 
 .illustration {

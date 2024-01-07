@@ -1,10 +1,9 @@
 import React from 'react'
 import appearance from './Divider.module.css'
 
-const Divider:React.FC = () =>{
-    return(
-        <div className={appearance.div}></div>
-    );
+const Divider: React.FC = ({white}) => {
+    const className = `${appearance.divider} ${white ? appearance.white : ''}`;
+    return <div className={className} />;
 };
 
 export default Divider;
