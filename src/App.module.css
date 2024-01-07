@@ -19,6 +19,16 @@
   padding: 40px 0;
 }
 
+.topNav {
+  display: flex; 
+  flex-direction: row;
+  width: 100%;
+  justify-content: end;
+  align-items: center;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
 header li {
   list-style: none;
   display: inline-block;
@@ -36,23 +46,6 @@ header a {
   gap: 0 127px;
   flex-wrap: wrap-reverse;
   align-items: center;
-}
-
-.dots {
-  position: absolute;
-  top: 160px;
-  left: -50px;
-  z-index: -10;
-}
-
-.topNav{
-  display: flex; 
-  flex-direction: row;
-  width: 100%;
-  justify-content: end;
-  align-items: center;
-  padding-left: 10%;
-  padding-right: 10%;
 }
 
 .heroContent {
@@ -98,7 +91,14 @@ header a {
   gap: 25px;
 }
 
-.column{
+.dots {
+  position: absolute;
+  top: 160px;
+  left: -50px;
+  z-index: -10;
+}
+
+.column {
   display: flex;
   flex-direction: column;
   justify-content: start;

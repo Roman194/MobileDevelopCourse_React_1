@@ -1,20 +1,24 @@
 import React from 'react'
 import providerIllustration from './assets/healthCareProviderIllustration.svg'
-import BorderButton from '../../ViewComponents/PrimaryOnlyBorderButton'
-import appearance from './HealthCareProvider.module.css'
+import Button from '../../ViewComponents/Button'
+import Divider from '../../../Components/ViewComponents/Divider'
+import appearance from '../textPictureBlocks.module.css'
+import { titles } from '../../../common.module.css'
+
 
 const HealthCareProvider: React.FC = () => {
   return (
     <div className={appearance.row}>
-      <div className={appearance.img}>
-        <img src={providerIllustration} alt="Leading healthcare providers" />
-      </div>
+      <img src={providerIllustration} alt="Leading healthcare providers" className={appearance.illustration} />
 
       <div className={appearance.column}>
-        <h1>Leading healthcare providers</h1>
-        <h2>We provides progressive, and affordable healthcare, accessible on mobile and online for everyone. To us, it's not just work. We take pride in the solutions we deliver</h2>
+        <div className={titles}>
+          <h1>Leading healthcare providers</h1>
+          <Divider />
+          We provides progressive, and affordable healthcare, accessible on mobile and online for everyone. To us, it's not just work. We take pride in the solutions we deliver
+        </div>
 
-        <BorderButton text="Learn more" />
+        <Button>Learn more</Button>
       </div>
     </div>
   )

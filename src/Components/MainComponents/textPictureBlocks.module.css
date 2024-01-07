@@ -1,0 +1,26 @@
+.column {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    margin-top: 57px;
+    margin-bottom: 32px;
+    width: 486px;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 0 137px;
+    flex-wrap: wrap;
+}
+
+.illustration {
+    width: 650px;
+}
+
+@media screen and (max-width: 1347px) {
+  .illustration {
+    width: 550px;
+  }
+}

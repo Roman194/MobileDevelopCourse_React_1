@@ -1,0 +1,9 @@
+.titles, .titlesCenter {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.titlesCenter {
+    align-items: center;
+}
