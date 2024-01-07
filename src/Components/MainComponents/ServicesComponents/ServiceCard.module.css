@@ -4,7 +4,7 @@
     justify-content: center;
     align-items: flex-start;
     background: white;
-    box-shadow: 10px 40px 50px 0px rgba(229, 233, 246, 0.40);
+    box-shadow: var(--shadow);
     border-radius: 20px;
     z-index: 1;
     font-size: 16px;
