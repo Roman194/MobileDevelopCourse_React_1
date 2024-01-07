@@ -11,6 +11,7 @@ import article2 from './assets/article2.svg'
 import article3 from './assets/article3.svg'
 import dots from './assets/dots.svg'
 import './App.module.css'
+import { titlesCenter } from './common.module.css'
 import Services from './Components/MainComponents/ServicesComponents/Services'
 import ArticleCard from './Components/MainComponents/ArticleComponents/ArticleCard'
 import Footer from './Components/MainComponents/FooterComponents/Footer'
@@ -20,7 +21,6 @@ import MobileApps from './Components/MainComponents/MobileAppsComponents/MobileA
 import SliderCard from './Components/MainComponents/SliderComponents/SliderCard'
 import Divider from './Components/ViewComponents/Divider'
 import Button from './Components/ViewComponents/Button'
-import PrimaryOnlyBorderButton from './Components/ViewComponents/PrimaryOnlyBorderButton'
 
 function App() {
   const services = [
@@ -106,7 +106,7 @@ function App() {
         </header>
         <div className={appearance.hero}>
           <div className={appearance.heroContent}>
-            <img src={dots} className={appearance.dots} />
+            <img src={dots} className={appearance.heroDots} />
             <div className={appearance.greetingTextContainer}>
               <h1 className={appearance.title}>Virtual healthcare for you</h1>
               <span className={appearance.greetingText}>Our service provides progressive, and affordable healthcare, accessible on mobile and online for everyone</span>
@@ -129,10 +129,17 @@ function App() {
         <SliderCard />
 
         <div className={appearance.artColumn}>
-          <h1>Check out our latest article</h1>
-          <Divider />
-          <ArticleCard arrt={articles}/>
-          <PrimaryOnlyBorderButton text={"View all"}/>
+          <div className={titlesCenter}>
+            <h1>Check out our latest article</h1>
+            <Divider />
+          </div>
+          <div className={appearance.articles}>
+            <img className={appearance.dotsLeft} src={dots} className={appearance.articlesDots} />
+            {articles.map((article, index) =>
+              <ArticleCard article={article} key={index} />
+            )}
+          </div>
+          <Button>View all</Button>
         </div>
       </main>
       <Footer footFunctions={footFunctions}/>

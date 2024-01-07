@@ -91,7 +91,7 @@ header a {
   gap: 25px;
 }
 
-.dots {
+.heroDots {
   position: absolute;
   top: 160px;
   left: -50px;
@@ -104,13 +104,27 @@ header a {
   justify-content: start;
 }
 
+.articles {
+  position: relative;
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.articlesDots {
+  position: absolute;
+  left: -49px;
+  top: -42px;
+  z-index: -10;
+}
+
 .artColumn {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding-right: 10%;
-  padding-left: 10%;
+  gap: 80px;
 }
 
 .currentSection {
