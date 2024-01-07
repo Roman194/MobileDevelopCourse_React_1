@@ -76,7 +76,7 @@ header a {
   }
 }
 
-h1 {
+.title {
   font-size: 48px;
   font-style: normal;
   font-weight: 700;
