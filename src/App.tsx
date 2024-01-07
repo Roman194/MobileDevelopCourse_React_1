@@ -108,13 +108,17 @@ function App() {
           <div className={appearance.heroContent}>
             <img src={dots} className={appearance.dots} />
             <div className={appearance.greetingTextContainer}>
-                <h1>Virtual healthcare for you</h1>
-                <span className={appearance.greetingText}>Our service provides progressive, and affordable healthcare, accessible on mobile and online for everyone</span>
+              <h1 className={appearance.title}>Virtual healthcare for you</h1>
+              <span className={appearance.greetingText}>Our service provides progressive, and affordable healthcare, accessible on mobile and online for everyone</span>
             </div>
             <Button primary>Consult today</Button>
           </div>
 
-          <img src={headIllustration} alt="Virtual healthcare for you" className={appearance.greetingImage} />
+          <img
+            src={headIllustration}
+            alt="Virtual healthcare for you"
+            className={appearance.greetingImage}
+          />
         </div>
       </div>
       <main className={appearance.column}>
