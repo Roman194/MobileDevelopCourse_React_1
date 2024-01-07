@@ -12,24 +12,17 @@ interface cards{
 }
 
 const ServiceCard: React.FC<cards> = ({cards}) =>{
-    return(
-        
+    return(        
         <div className={appearance.card}>
-            {
-            cards.map((item, index) =>
-
-            <div className={appearance.subCard}>
-                <img src={cards[index].serviceLogo} alt={cards[index].title}/>
-                <h1 className={appearance.h1}>{cards[index].title}</h1>
-                <h2 className={appearance.h2}>{cards[index].subtitle}</h2>
-            </div>
-
-            )
-            }
+            {cards.map((item, index) =>
+                <div className={appearance.subCard} key={index}>
+                    <img src={cards[index].serviceLogo} alt={cards[index].title}/>
+                    <h1 className={appearance.h1}>{cards[index].title}</h1>
+                    <h2 className={appearance.h2}>{cards[index].subtitle}</h2>
+                </div>
+            )}
         </div>
-        
     );
-
 };
 
 export default ServiceCard;
