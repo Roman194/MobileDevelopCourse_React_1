@@ -1,6 +1,7 @@
 import React from 'react'
 import ServiceCard from './ServiceCard'
 import appearance from './Services.module.css'
+import { titlesCenter } from '../../../common.module.css'
 import Divider from '../../ViewComponents/Divider'
 import Button from '../../ViewComponents/Button'
 import illustration from './assets/illustration.svg'
@@ -19,7 +20,7 @@ interface cards {
 const Services:React.FC<cards> = ({cards}) => {
   return (
     <div className={appearance.main}>
-      <div className={appearance.titles}>
+      <div className={titlesCenter}>
         <h1 className={appearance.textCenter}>Our services</h1>
         <Divider />
         <div className={appearance.textCenter}>We provide to you the best choiches for you. Adjust it to your health needs and make sure your undergo treatment with our highly qualified doctors you can consult with us which type of service is suitable for your health</div>
