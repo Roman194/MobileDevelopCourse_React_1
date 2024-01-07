@@ -25,11 +25,11 @@ const Footer: React.FC<footFunctions> = ({footFunctions}) =>{
       </div>
       {
         footFunctions.map((item, index) => 
-          <div>
+          <div key={index}>
             <h3>{footFunctions[index].chapterName}</h3>
             {
               footFunctions[index].elements.map((item, elIndex) =>
-                <div>
+                <div key={elIndex}>
                   <h4>{footFunctions[index].elements[elIndex]}</h4>
                 </div>
               )

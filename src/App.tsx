@@ -109,7 +109,7 @@ function App() {
             <img src={dots} className={appearance.dots} />
             <div className={appearance.greetingTextContainer}>
                 <h1>Virtual healthcare for you</h1>
-                <span class={appearance.greetingText}>Our service provides progressive, and affordable healthcare, accessible on mobile and online for everyone</span>
+                <span className={appearance.greetingText}>Our service provides progressive, and affordable healthcare, accessible on mobile and online for everyone</span>
             </div>
             <Button primary>Consult today</Button>
           </div>
