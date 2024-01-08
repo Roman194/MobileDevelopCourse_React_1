@@ -134,7 +134,7 @@ function App() {
             <Divider />
           </div>
           <div className={appearance.articles}>
-            <img className={appearance.dotsLeft} src={dots} className={appearance.articlesDots} />
+            <img src={dots} className={appearance.articlesDots} />
             {articles.map((article, index) =>
               <ArticleCard article={article} key={index} />
             )}
