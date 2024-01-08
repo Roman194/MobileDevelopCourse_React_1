@@ -10,6 +10,7 @@ import article1 from './assets/article1.svg'
 import article2 from './assets/article2.svg'
 import article3 from './assets/article3.svg'
 import dots from './assets/dots.svg'
+import burger from './assets/burger.svg'
 import './App.module.css'
 import { titlesCenter } from './common.module.css'
 import Services from './Components/MainComponents/ServicesComponents/Services'
@@ -94,7 +95,7 @@ function App() {
       <div className={appearance.topContainer}>
         <header className={appearance.menu}>
           <img src={companyLogo} alt="Health care" width="183" />
-          <nav className={appearance.column}>
+          <nav className={appearance.nav}>
             <ul>
               <li><a href="#" className={appearance.currentSection}>Home</a></li>
               <li><a href="#">Find a doctor</a></li>
@@ -103,6 +104,7 @@ function App() {
               <li><a href="#">About us</a></li>
             </ul> 
           </nav>
+          <img src={burger} alt="Меню" className={appearance.burger} />
         </header>
         <div className={appearance.hero}>
           <div className={appearance.heroContent}>
