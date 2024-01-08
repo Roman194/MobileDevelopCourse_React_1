@@ -98,10 +98,13 @@ header a {
   z-index: -10;
 }
 
-.column {
+.column, .blockContainer {
   display: flex;
   flex-direction: column;
-  justify-content: start;
+}
+
+.blockContainer {
+  gap: 220px;
 }
 
 .articles {

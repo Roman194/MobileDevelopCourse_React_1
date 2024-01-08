@@ -90,7 +90,7 @@ function App() {
   ]
 
   return (
-    <>
+    <div className={appearance.blockContainer}>
       <div className={appearance.topContainer}>
         <header className={appearance.menu}>
           <img src={companyLogo} alt="Health care" width="183" />
@@ -121,7 +121,7 @@ function App() {
           />
         </div>
       </div>
-      <main className={appearance.column}>
+      <main className={appearance.blockContainer}>
         <Services cards={services}/>
         
         <HealthCareProvider />
@@ -143,7 +143,7 @@ function App() {
         </div>
       </main>
       <Footer footFunctions={footFunctions}/>
-    </>
+    </div>
   )
 }
 
