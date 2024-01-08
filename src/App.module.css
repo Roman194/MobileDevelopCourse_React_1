@@ -17,16 +17,21 @@
   display: flex;
   justify-content: space-between;
   padding: 40px 0;
+  gap: 20px;
 }
 
-.topNav {
-  display: flex; 
-  flex-direction: row;
-  width: 100%;
-  justify-content: end;
-  align-items: center;
-  padding-left: 10%;
-  padding-right: 10%;
+.burger {
+  display: none;
+}
+
+@media screen and (max-width: 957px) {
+  .nav {
+    display: none;
+  }
+
+  .burger {
+    display: block;
+  }
 }
 
 header li {
@@ -38,6 +43,10 @@ header li {
 header a {
   text-decoration: none;
   color: inherit;
+}
+
+header ul {
+  padding: 0;
 }
 
 .hero {
@@ -101,6 +110,7 @@ header a {
 .column, .blockContainer {
   display: flex;
   flex-direction: column;
+  max-width: 100vw;
 }
 
 .blockContainer {
