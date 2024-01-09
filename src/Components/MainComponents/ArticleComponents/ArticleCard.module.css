@@ -1,0 +1,35 @@
+.article {
+    box-shadow: var(--shadow);
+    border-radius: 20px;
+    overflow: hidden;
+    background: white;
+    width: 350px;
+    font-size: 16px;
+}
+
+.article h2 {
+    font-size: 21px;
+}
+
+.articleDescription {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    padding: 33px;
+}
+
+.articleInfo {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.moreBut {
+    display: block;
+    border: none;
+    background: none;
+    color: var(--button-color);
+    width: fit-content;
+    margin: 0;
+    padding: 0;
+}
