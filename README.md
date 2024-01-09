@@ -2,13 +2,13 @@
 
 This is my first Web application.<br />
 
-##How to run this project?<br />
+## How to run this project?<br />
 - open Visual Studio Code<br />
 - open View-Terminal<br />
 - command in terminal: npm install<br />
 - command in terminal: npm run dev<br />
 
-##Versions:<br />
+## Versions:<br />
 - VS Code: 1.85.0<br />
 - npm 10.2.5<br />
 - node.js 20.10.0<br />
@@ -16,7 +16,7 @@ This is my first Web application.<br />
 - vite: 5.0.8<br />
 - typescript: 5.2.2<br />
 
-##Screenshots:<br />
+## Screenshots:<br />
 
 ![image](https://github.com/Roman194/MobileDevelopCourse_React_1/assets/66479764/9784ac29-93d6-476c-a3f9-6ee46fdfa129)<br />
 ![image](https://github.com/Roman194/MobileDevelopCourse_React_1/assets/66479764/2ce810cd-ab9d-4e95-a15f-15a6680d0905)<br />
