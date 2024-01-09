@@ -6,7 +6,7 @@ interface ButtonArgs {
     children: React.ReactNode
 }
 
-const Button: React.FC<any> = ({primary, children}) => {
+const Button: React.FC<ButtonArgs> = ({primary, children}) => {
     const className = appearance.button + ' ' + (primary ? appearance.primary : '')
 
     return (
